@@ -2,6 +2,10 @@
 
 Official Implementation of HEVEC (Homomorphically Encrypted VECtor database)
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=cloneisyou/HEVEC&type=date&legend=top-left)](https://www.star-history.com/#cloneisyou/HEVEC&type=date&legend=top-left)
+
 ## Citation
 
 ```
