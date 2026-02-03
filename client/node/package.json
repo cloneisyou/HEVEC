@@ -1,0 +1,18 @@
+{
+  "name": "hevec-node",
+  "version": "0.0.1",
+  "description": "Node.js bindings for the HEVEC homomorphic encrypted vector database",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "build:hevec-native": "cmake-js build --CD BUILD_NODE=ON --out build"
+  },
+  "devDependencies": {
+    "cmake-js": "^7.2.1",
+    "node-addon-api": "^8.0.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}

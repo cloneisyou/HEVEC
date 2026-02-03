@@ -1,0 +1,17 @@
+name: HEVEC-dev
+channels:
+  - conda-forge
+dependencies:
+  - cxx-compiler
+  - clang=17
+  - clangxx=17
+  - llvm-openmp
+  - cmake=3.21
+  - openssl
+  - gcovr=8.2
+  - zlib
+  - asio
+  - make
+  - git
+  - python=3.10.12
+  - fire==0.7.1
