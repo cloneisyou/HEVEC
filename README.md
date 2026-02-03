@@ -190,28 +190,6 @@ server.cacheQuery(qcache, queryCt);
 
 > See `server/example/ex0_ip.py` for the complete runnable version.
 
-## Architecture
-
-```mermaid
-flowchart LR
-    subgraph Client
-        A[Keygen<br/>SecretKey / SwitchingKey]
-        B[Encrypt query
-        (MLWE)]
-        C[Decrypt scores]
-    end
-
-    subgraph Server
-        D[HEVEC Server<br/>C++20 + HEXL]
-        E[Vector Collections<br/>HE-friendly layout]
-    end
-
-    A --> B
-    B -->|encrypted query| D
-    E --> D
-    D -->|encrypted scores| C
-```
-
 ## Security Model
 
 HEVEC follows a **client-holds-secret** design. The server never sees plaintext data.
