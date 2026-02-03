@@ -24,6 +24,16 @@
   <img src="https://img.shields.io/badge/Node.js-20%2B-green" />
 </p>
 
+<p align="center">
+  <i>
+    This repository implements the system described in<br/>
+    <a href="https://arxiv.org/abs/2506.17336">
+      <b>Privacy-Preserving LLM Interaction with Socratic Chain-of-Thought Reasoning and
+      Homomorphically Encrypted Vector Databases</b>
+    </a>.
+  </i>
+</p>
+
 ---
 
 ## What is HEVEC?
