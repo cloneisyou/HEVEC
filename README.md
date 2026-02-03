@@ -389,6 +389,10 @@ All scripts live under `server/example/`. Ensure the server is running (`python 
 
 Data is not bundled. Use the paths in each example's usage string and supply your own embeddings/FBIN files. GPU is recommended for `ex3_locomo.py` due to transformer inference.
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=cloneisyou/HEVEC&type=date&legend=top-left)](https://www.star-history.com/#cloneisyou/HEVEC&type=date&legend=top-left)
+
 ## Citation
 
 ```
