@@ -1,11 +1,75 @@
-# HEVEC
+<p align="center">
+  <img src="assets/logo.png" alt="HEVEC logo" width="200"/>
+</p>
 
-HEVEC (Homomorphically Encrypted VECtor database): end‑to‑end encrypted similarity search where queries stay MLWE-encrypted throughout the client ↔ server lifecycle. HEVEC aims to remove the privacy bottleneck for personal AI agents (e.g., OpenClaw‑style copilots) by keeping both data and queries encrypted even during computation.
+<h1 align="center">HEVEC</h1>
 
-## Why HEVEC
-- Secure alternative to plaintext vector databases: data and queries remain encrypted end to end via homomorphic encryption—only the user can decrypt results.
-- Real-time encrypted search at scale: demonstrated ~1M vectors in ~187 ms while preserving privacy.
-- System-level privacy by design: aligned with the principle that deeply personalized agents must leave data ownership with users; already serving as a core privacy component in real deployments (e.g., Clone multimodal memory assistant).
+<p align="center">
+  <b>Homomorphically Encrypted Vector Database</b><br/>
+  Real-time similarity search over encrypted vectors — without ever decrypting data or queries.
+</p>
+
+<p align="center">
+  <a href="https://github.com/cloneisyou/hevec/stargazers">
+    <img src="https://img.shields.io/github/stars/cloneisyou/hevec?style=social" />
+  </a>
+  <a href="https://github.com/cloneisyou/hevec/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/cloneisyou/hevec" />
+  </a>
+  <a href="https://arxiv.org/abs/2506.17336">
+    <img src="https://img.shields.io/badge/arXiv-2506.17336-b31b1b.svg" />
+  </a>
+  <img src="https://img.shields.io/badge/C%2B%2B-20-blue" />
+  <img src="https://img.shields.io/badge/Python-3.10%2B-blue" />
+  <img src="https://img.shields.io/badge/Node.js-20%2B-green" />
+</p>
+
+---
+
+## What is HEVEC?
+
+**HEVEC** is a vector database built on **homomorphic encryption (HE)** that enables:
+
+- 🔐 **End-to-end encrypted similarity search**
+- 🚫 **No plaintext data, no plaintext queries — ever**
+- ⚡ **Real-time performance at million-scale**
+
+Unlike conventional vector databases, **HEVEC performs similarity search directly on encrypted vectors**, ensuring that neither the server nor the infrastructure provider can see user data or queries.
+
+---
+
+## Why HEVEC exists
+
+Modern AI systems — especially **personal AI agents and copilots** — rely on deeply personal embeddings:
+screen history, memories, preferences, private documents.
+
+This creates a fundamental privacy bottleneck:
+
+> Vector databases require plaintext embeddings to work.
+
+**HEVEC removes this bottleneck.**
+
+It allows personal AI agents (e.g., OpenClaw-style copilots, long-term memory systems) to retrieve relevant context **without ever decrypting data on the server side**.
+
+---
+
+## Key Capabilities
+
+### 🔐 End-to-End Encrypted Search
+- Queries remain **MLWE-encrypted** throughout the entire client ↔ server lifecycle
+- Only the client holds the secret key
+- Server never sees plaintext vectors, queries, or scores
+
+### ⚡ Real-Time at Scale
+- Demonstrated **~1M encrypted vectors in ~187 ms**
+- No trusted hardware, no secure enclaves required
+
+### 🧠 Built for Personal AI Agents
+- Designed as a core privacy layer for long-term multimodal memory
+- Already used in real systems (e.g., **Clone** memory assistant)
+
+---
+
 
 ## Quick Start
 
@@ -357,7 +421,3 @@ Data is not bundled. Use the paths in each example's usage string and supply you
   year={2025}
 }
 ```
-
-## License
-
-MIT — see [LICENSE](LICENSE) for details.
